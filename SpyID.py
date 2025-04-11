@@ -17,7 +17,7 @@ with TelegramClient('session_name', api_id, api_hash) as client:
             user = client.get_entity(username)
             print("\n--- Result ---")
             print(f"Username: @{user.username}")
-            print(f"Nome: {user.first_name}")
+            print(f"Name: {user.first_name}")
             print(f"ID: {user.id}")
             print("------------------")
         except UsernameNotOccupiedError:
